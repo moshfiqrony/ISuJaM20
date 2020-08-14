@@ -14,18 +14,24 @@ public class Fx14082020 extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-//        Button btn = new Button();
-//        btn.setText("Say 'Hello World'");
-//        btn.setOnAction(new EventHandler<ActionEvent>() {
-//            
-//            @Override
-//            public void handle(ActionEvent event) {
-//                System.out.println("Hello World!");
-//            }
-//        });
-        TextField username = new TextField("Type your username");
+        Button btn = new Button();
+        btn.setText("Logout");
+        btn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                Stage logoutStage = new Stage();
+                logoutStage.setTitle("Do you really want to Logout?");
+                Button yes = new Button("Yes");
+                StackPane logoutPane = new StackPane();
+                logoutPane.getChildren().add(yes);
+                Scene logoutScene = new Scene(logoutPane, 200, 200);
+                logoutStage.setScene(logoutScene);
+                logoutStage.show();
+            }
+        });
+        
         StackPane root = new StackPane();
-        root.getChildren().add(username);
+        root.getChildren().add(btn);
         
         Scene scene = new Scene(root, 500, 500);
         primaryStage.setTitle("IUBAT");
