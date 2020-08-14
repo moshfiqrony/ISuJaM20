@@ -23,3 +23,7 @@
 hs_err_pid*
 /14082020/nbproject/private/
 /14082020/build/
+/fx-14082020/nbproject/private/
+/fx-14082020/build/
+/fx-14082020/dist/
+*.properties
