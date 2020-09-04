@@ -27,3 +27,7 @@ hs_err_pid*
 /fx-14082020/build/
 /fx-14082020/dist/
 *.properties
+/28082020/nbproject/private/
+/DBConnect/nbproject/private/
+/DBConnect/build/
+/DBConnect/dist/
